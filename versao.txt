@@ -1,0 +1,7 @@
+﻿versao=1.18.23
+data=2026-08-31 23:16:47
+binario=C:\Users\azand\AppData\Local\opencode\bin\opencode.exe
+config=C:\Users\azand\.config\opencode
+data_dir=C:\Users\azand\.local\share\opencode
+sessoes=8
+mensagens=163

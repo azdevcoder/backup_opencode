@@ -1,0 +1,9 @@
+﻿# Binários grandes - estão no ZIP da Release
+*.exe
+*.db
+*.db-shm
+*.db-wal
+*.zip
+node_modules/
+tool-output/
+log/

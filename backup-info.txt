@@ -1,0 +1,8 @@
+﻿backup_original=C:\opencode\BACKUP-OPENCODE-v1.18.23-2026-08-31
+zip=C:\opencode\backup_opencode-v1.18.23-2026-08-31.zip
+zip_size_MB=144.73
+uncompressed_MB=412.37
+files=3755
+version=1.18.23
+date=2026-08-31 23:16:47
+repo=https://github.com/azdevcoder/backup_opencode
