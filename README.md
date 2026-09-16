@@ -4,6 +4,36 @@ Backup completo do **OpenCode v1.18.23** (Bun 1.3.14) — criado em 2026-08-31 2
 
 > **Nunca perca o opencode:** este repositório guarda tudo para restaurar offline, mesmo sem internet.
 
+## 📦 Kit instalador offline v1.18.31 (Linux + Windows)
+
+Instalador gerado e testado em 2026-09-16 a partir de instalação Linux funcional.
+
+**[⬇️ Baixar opencode-payload-v1.18.31.tar.gz na Release](../../releases)** (196 MB)
+
+Baixe o payload acima + os 2 arquivos da pasta `kit-instalador-v1.18.31/` deste repo
+(`instala-opencode-linux.sh` ou `instala-opencode-windows.ps1` + `leia-me-instalacao.txt`).
+
+Conteúdo: binários Linux + Windows v1.18.31, 184 agentes, 283 skills, `AGENTS.md`,
+`opencode.jsonc` (9 plugins), tema tech-neon-blue, 5 plugins offline.
+Nenhuma chave de API no kit — autentique com `/connect` após instalar.
+
+Linux:
+
+```bash
+chmod +x instala-opencode-linux.sh
+./instala-opencode-linux.sh
+```
+
+Windows (PowerShell):
+
+```powershell
+.\instala-opencode-windows.ps1
+```
+
+Detalhes em `kit-instalador-v1.18.31/leia-me-instalacao.txt`.
+
+---
+
 ## 📦 O que está no backup
 
 O backup completo está na **Release** como ZIP (144 MB comprimido, 412 MB descomprimido):

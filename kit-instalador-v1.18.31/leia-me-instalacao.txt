@@ -1,0 +1,69 @@
+OPENCODE v1.18.31 — KIT DE INSTALACAO OFFLINE
+============================================
+Gerado em 2026-09-16 a partir de instalacao Linux x86_64 funcional.
+Conteudo: binario Linux + binario Windows + 184 agentes + 283 skills.
+
+ARQUIVOS DO KIT
+---------------
+- opencode-payload-v1.18.31.tar.gz ..... payload (binarios + config + plugins)
+- instala-opencode-linux.sh ............ instalador Linux
+- instala-opencode-windows.ps1 ......... instalador Windows
+- leia-me-instalacao.txt ............... este arquivo
+
+O QUE VAI INSTALADO
+-------------------
+- ~/.opencode/bin/opencode(.exe) ... binario oficial v1.18.31
+- ~/.config/opencode/ ................. AGENTS.md, opencode.jsonc (9 plugins),
+                                        tui.json, tema tech-neon-blue,
+                                        184 agentes, 283 skills, node_modules
+- ~/.cache/opencode/packages/ ......... 5 plugins restaurados offline:
+                                        worktree, wakatime, scheduler,
+                                        supermemory, vibeguard
+- ~/opencode/arquivos/{documentos,txt,audios,videos,imagens,outros}
+
+REQUISITOS
+----------
+- Linux x86_64 com glibc (Ubuntu 22.04+, Zorin 17+, Debian 12+) ou Windows 10+ x64
+- ~1,2 GB livre (payload + instalacao)
+- Internet: OPCIONAL na instalacao; necessaria depois para /connect e para
+  4 plugins baixarem na primeira execucao (notifier, tavily, shell-strategy,
+  dynamic-context-pruning)
+
+INSTALAR NO LINUX
+-----------------
+1. Copie os 2 arquivos (.tar.gz + .sh) para a maquina nova (mesma pasta).
+2. chmod +x instala-opencode-linux.sh
+3. ./instala-opencode-linux.sh
+4. export PATH="$HOME/.opencode/bin:$PATH" (ou reabra o terminal)
+5. opencode
+6. Dentro do opencode: /connect  (autenticar — nenhuma chave veio no kit)
+
+INSTALAR NO WINDOWS
+-------------------
+1. Copie os 2 arquivos (.tar.gz + .ps1) para a maquina nova (mesma pasta).
+2. Abra o PowerShell na pasta e rode: .\instala-opencode-windows.ps1
+   (se o Windows bloquear, rode antes: Unblock-File .\instala-opencode-windows.ps1)
+3. Reabra o terminal e rode: opencode
+4. Dentro do opencode: /connect  (autenticar — nenhuma chave veio no kit)
+
+SEGURANCA
+---------
+- Nenhuma API key, token ou banco de autenticacao foi incluido no kit.
+- Se ja existir ~/.config/opencode na maquina destino, ele e preservado em
+  ~/.config/opencode.bak-<data-hora> antes da copia.
+
+DESINSTALAR / REVERTER
+----------------------
+- Apagar ~/.opencode, ~/.config/opencode e ~/.cache/opencode/packages remove tudo.
+- O backup .bak permite restaurar a config anterior, se houver.
+
+SOLUCAO DE PROBLEMAS
+---------------------
+- "tarball nao encontrado": deixe o .tar.gz na mesma pasta do instalador
+  ou passe o caminho como argumento.
+- "tar: command not found" (Windows antigo): instale o Git for Windows ou
+  7-Zip e extraia manualmente, ou atualize para Windows 10+.
+- Plugins com erro na primeira execucao sem internet: normal para os 4
+  plugins online; conecte-se e reinicie o opencode.
+- Versao do binario difere da instalada: rode `opencode --version`;
+  esperado: 1.18.31.
