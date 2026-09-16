@@ -6,7 +6,7 @@ Backup completo do **OpenCode v1.18.23** (Bun 1.3.14) — criado em 2026-08-31 2
 
 ## 📦 Kit instalador offline v1.18.31 (Linux + Windows)
 
-Instalador gerado e testado em 2026-09-16 a partir de instalação Linux funcional.
+Instalador gerado e testado em 2026-09-15 a partir de instalação Linux funcional.
 
 **[⬇️ Baixar opencode-payload-v1.18.31.tar.gz na Release](../../releases)** (196 MB)
 
@@ -57,7 +57,8 @@ pm install\)
 3.  **data/** — dados e histórico  
     Origem: \C:\Users\azand\.local\share\opencode\  
     - \opencode.db\ (16 MB, 8 sessões, 163 mensagens) + WAL checkpoint  
-    - \log/opencode.log\, \epos/\, \	ool-output/\
+    - \log/opencode.log\, \
+epos/\, \	ool-output/\
 
 4.  **README-restauracao.txt** + **versao.txt** com checksums SHA256
 
